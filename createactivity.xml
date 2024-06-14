@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".CreateActivity">
+
+    <!-- Queue Layout containing draggable items within a HorizontalScrollView -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:id="@+id/queueLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Example items -->
+            <ImageView
+                android:layout_width="79dp"
+                android:layout_height="58dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/sofa" />
+
+            <ImageView
+                android:layout_width="78dp"
+                android:layout_height="58dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/s2" />
+
+            <ImageView
+                android:layout_width="81dp"
+                android:layout_height="61dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/s1" />
+
+            <ImageView
+                android:layout_width="69dp"
+                android:layout_height="61dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/baseline_3g_mobiledata_24" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Drop zone layout -->
+    <LinearLayout
+        android:id="@+id/dropZone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/dropPlaceholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drop items here"
+            android:visibility="invisible" />
+
+
+    </LinearLayout>
+
+    <!-- Bottom layout for displaying size, rotation, and direction -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/sizeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Size: 100%" />
+
+        <SeekBar
+            android:id="@+id/resizeSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/rotationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Rotation: 0°" />
+
+        <SeekBar
+            android:id="@+id/rotateSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/directionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Direction: 0°" />
+        <Button
+            android:id="@+id/buttonsave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="save" />
+    </LinearLayout>
+</LinearLayout>

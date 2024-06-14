@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InteriorDesignsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <!-- First FrameLayout -->
+        <FrameLayout
+            android:id="@+id/container1"
+            android:layout_width="346dp"
+            android:layout_height="346dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/modern"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:padding="8dp"
+                android:text="Modern Design"
+                android:textColor="@color/purple_700"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <!-- Second FrameLayout -->
+        <FrameLayout
+            android:id="@+id/container2"
+            android:layout_width="346dp"
+            android:layout_height="346dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/outdoor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/container1">
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:padding="8dp"
+                android:text="Outdoor Design"
+                android:textColor="@color/purple_700"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <!-- Third FrameLayout -->
+        <FrameLayout
+            android:id="@+id/container3"
+            android:layout_width="346dp"
+            android:layout_height="346dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/culture"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/container2">
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:padding="8dp"
+                android:text="Culture Design"
+                android:textColor="@color/purple_700"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <!-- Fourth FrameLayout -->
+        <FrameLayout
+            android:id="@+id/container4"
+            android:layout_width="346dp"
+            android:layout_height="346dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/industrial"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/container3">
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:padding="8dp"
+                android:text="Industrial Design"
+                android:textColor="@color/purple_700"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <!-- Fifth FrameLayout -->
+        <FrameLayout
+            android:id="@+id/container5"
+            android:layout_width="346dp"
+            android:layout_height="346dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/art"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/container4">
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:padding="8dp"
+                android:text="ART-THEME"
+                android:textColor="@color/purple_700"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <!-- Sixth FrameLayout -->
+        <FrameLayout
+            android:id="@+id/container6"
+            android:layout_width="346dp"
+            android:layout_height="346dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/book"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/container5">
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:padding="8dp"
+                android:text="Book Café"
+                android:textColor="@color/purple_700"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</HorizontalScrollView>

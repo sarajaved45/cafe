@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutFragment">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="233dp"
+        android:layout_height="177dp"
+        android:text="Welcome to CafeDesignPro, the ultimate app for cafe owners, designers, and enthusiasts looking to transform their spaces into stunning and inviting environments. Our app offers a seamless blend of innovative design tools, trend insights, and professional guidance to help you create the perfect ambiance for your cafe. Whether you're starting from scratch or looking to revamp an existing space, CafeDesignPro empowers you to visualize, plan, and execute your design vision with ease and precision. Join our community of passionate cafe creators and bring your dream cafe to life!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.557" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="318dp"
+        android:layout_height="275dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/mnnnn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.311"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
